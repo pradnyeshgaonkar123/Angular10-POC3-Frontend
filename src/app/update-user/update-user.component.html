@@ -1,0 +1,68 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Update User </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> First Name</label>
+            <input type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "user.firstName" name = "firstName">
+        </div>
+    
+        <div class="form-group">
+            <label> Last Name</label>
+            <input type="text" class ="form-control" id = "lastName"
+                [(ngModel)] = "user.lastName" name = "lastName">
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+            <input type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "user.email" name = "emailId">
+        </div>
+
+        <div class="form-group">
+            <label>gender</label>
+            <input type="text" class ="form-control" id = "gender"
+                [(ngModel)] = "user.gender" name = "gender">
+        </div>
+
+        <div class="form-group">
+            <label> age</label>
+            <input type="number" class ="form-control" id = "age"
+                [(ngModel)] = "user.age" name = "age">
+        </div>
+
+        <div class="form-group">
+            <label> Address</label>
+            <input type="text" class ="form-control" id = "address"
+                [(ngModel)] = "user.address" name = "address">
+        </div>
+
+        <div class="form-group">
+            <label> Pincode </label>
+            <input type="text" class ="form-control" id = "pincode"
+                [(ngModel)] = "user.pincode" name = "pincode">
+        </div>
+
+        <div class="form-group">
+            <label> Doj</label>
+            <input type="date" class ="form-control" id = "doj"
+                [(ngModel)] = "user.doj" name = "doj">
+        </div>
+
+        <div class="form-group">
+            <label> Dob </label>
+            <input type="date" class ="form-control" id = "dob"
+                [(ngModel)] = "user.dob" name = "dob">
+        </div>
+
+        <div class="form-group">
+            <label> Password </label>
+            <input type="text" class ="form-control" id = "password"
+                [(ngModel)] = "user.password" name = "password">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Update</button>
+    
+    </form>
+    </div> 

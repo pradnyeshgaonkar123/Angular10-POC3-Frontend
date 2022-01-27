@@ -1,0 +1,61 @@
+<h2 style="text-align: center;"> User List</h2>
+
+<div style="text-align: center;">
+    <span class="form-group" style="margin-left: 20px">
+        <input type="text" id="firstName" [(ngModel)]="firstName" name="firstName" placeholder="Search by firstname" />
+    </span>
+    
+    
+    <button (click)="getUserByFirstName(firstName)" class="btn btn-info">Search</button>
+    
+    <span class="form-group" style="margin-left: 20px">
+        <input type="text" id = "lastName"
+            [(ngModel)] = "lastName" name = "lastName" placeholder="Search by lastname"/>
+    </span>
+    
+    
+    <button (click) = "getUserByLastName(lastName)" class = "btn btn-info">Search</button>
+    
+    <span class="form-group" style="margin-left: 20px">
+        <input type="text" id="pincode" [(ngModel)]="pincode" name="pincode" placeholder="Search by pincode" />
+    </span>
+    
+    
+    <button (click)="getUserByPincode(pincode)" class="btn btn-info" >Search</button>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> First Name</th>
+            <th> Last Name </th>
+            <th> Email Id</th>
+            <th> Address</th>
+            <th> Gender</th>
+            <th> <a (click) = "getUserSortedByDoj()" style="text-align: none;">DOJ</a></th>
+            <th><a (click) = "getUserSortedByDob()" style="text-align: none;">DOB</a></th>
+            <th> Pincode</th>
+            <th> Password</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td> {{ user.firstName }} </td>
+            <td> {{ user.lastName }} </td>
+            <td> {{ user.email }} </td>
+            <td> {{ user.address }} </td>
+            <td> {{ user.gender }} </td>
+            <td> {{ user.doj }} </td>
+            <td> {{ user.dob }} </td>
+            <td> {{ user.pincode }} </td>
+            <td> {{ user.password }} </td>
+
+            <td>
+                <button (click)="softDeleteUser(user.id)" class="btn btn-danger">Soft Del</button>
+                <button (click)="updateUser(user.id)" class="btn btn-info" style="margin-left: 10px"> Update</button>
+                <button (click)="deleteUser(user.id)" class="btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

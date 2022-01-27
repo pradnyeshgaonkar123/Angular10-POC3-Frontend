@@ -1,0 +1,50 @@
+
+.nav-link{
+    color: white;
+}
+
+.header{
+    height: 50px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+    height: 100px;
+    
+}
+
+#pname{
+    padding-left: 35px;
+    font-size: 35px;
+    padding-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 60px;
+}
+
+.links{
+    position: relative;
+    justify-content: end;
+    color: white;
+    border: 1px solid red;
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: px;
+    margin-top: 45px;
+    margin-right: 5px;
+    border-radius: 5px;
+    height: 30px;
+    padding-bottom: -30px;
+    border-style: border-box;
+    padding-bottom: 30px;
+}
+.link{
+    text-decoration: none;
+}
+.links :hover{
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
