@@ -1,4 +1,3 @@
-<h2 style="text-align: center;"> User List</h2>
 
 <div style="text-align: center;">
     <span class="form-group" style="margin-left: 20px">
@@ -23,6 +22,9 @@
     
     <button (click)="getUserByPincode(pincode)" class="btn btn-info" >Search</button>
 </div>
+<br/>
+<p style="text-align: center;"><b>Note: for sort by doj and dob click on particular column name</b></p>
+<h2 style="text-align: center;"> User List</h2>
 
 <table class="table table-striped">
     <thead>
@@ -36,7 +38,7 @@
             <th><a (click) = "getUserSortedByDob()" style="text-align: none;">DOB</a></th>
             <th> Pincode</th>
             <th> Password</th>
-            <th> Actions </th>
+            <th style="text-align: center;"> Actions </th>
         </tr>
     </thead>
     <tbody>

@@ -1,5 +1,5 @@
 <div class="col-md-6 offset-md-3">
-    <h3> Update User </h3>
+    <h3 style="text-align: center;"> Update User </h3>
     <form (ngSubmit) = "onSubmit()">
     
         <div class="form-group">
@@ -62,7 +62,10 @@
                 [(ngModel)] = "user.password" name = "password">
         </div>
     
-        <button class = "btn btn-success" type ="submit">Update</button>
+        <div style="text-align: center;margin: 10px;">
+            <button class = "btn btn-success" type ="submit" style="margin-right: 10px;">Update</button>
+            <button class = "btn btn-success" type ="reset">Re-write</button>
+        </div>
     
     </form>
     </div> 
